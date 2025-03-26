@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gaia Grid | Sharing Policy</title>
+  <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+  <style>
+    /* ===== CORE STYLES (Match art.html exactly) ===== */
+    body {
+      background: hsl(154 50% 5%);
+      color: hsl(130, 84%, 70%);
+      font-family: 'VT323', monospace;
+      margin: 0;
+      padding: 20px;
+      overflow-y: auto;
+      text-align: left;
+      font-size: 1.2em;
+      line-height: 1.5;
+      user-select: none;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+    }
+
+    .back-button {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      font-size: 1.6em;
+      cursor: pointer;
+      z-index: 3;
+      background: transparent;
+      border: none;
+      padding: 10px;
+      color: hsl(130, 84%, 70%);
+      transition: all 0.3s ease;
+      text-decoration: none;
+    }
+
+    .back-button:hover {
+      text-shadow: 0 0 4px hsl(130, 84%, 70%);
+    }
+
+    /* ===== POLICY-SPECIFIC STYLES ===== */
+    .policy-container {
+      max-width: 800px;
+      margin: 60px auto;
+      padding: 20px;
+      animation: fadeIn 0.5s ease;
+    }
+
+    h1 {
+      font-size: 1.8em;
+      border-bottom: 1px solid hsl(130, 84%, 70%);
+      padding-bottom: 10px;
+      margin-top: 0;
+      position: relative;
+    }
+
+    h1::after {
+      content: '⧉';
+      position: absolute;
+      right: 0;
+      opacity: 0.5;
+    }
+
+    h2 {
+      font-size: 1.4em;
+      color: hsl(130, 84%, 80%);
+      margin-top: 30px;
+      border-left: 3px solid hsl(130, 84%, 70%);
+      padding-left: 10px;
+    }
+
+    ul {
+      padding-left: 20px;
+      list-style-type: '▹ ';
+    }
+
+    li {
+      margin-bottom: 8px;
+      padding-left: 5px;
+    }
+
+    li:hover {
+      background: hsla(154, 50%, 10%, 0.3);
+    }
+
+    code {
+      background: hsla(154, 50%, 10%, 0.8);
+      padding: 2px 6px;
+      border: 1px dashed hsl(130, 84%, 70%);
+      font-size: 0.9em;
+    }
+
+    a {
+      color: hsl(130, 84%, 70%);
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    a:hover {
+      text-shadow: 0 0 5px hsl(130, 84%, 70%);
+    }
+
+    .copyright-notice {
+      margin-top: 40px;
+      padding: 10px;
+      text-align: center;
+      font-size: 0.9em;
+      color: hsl(130, 84%, 60%);
+      border-top: 1px dashed hsl(130, 84%, 70%);
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* ===== RESPONSIVE ADJUSTMENTS ===== */
+    @media (max-width: 768px) {
+      .policy-container {
+        max-width: 90%;
+        margin: 50px auto;
+        padding: 15px;
+      }
+
+      h1 {
+        font-size: 1.6em;
+      }
+
+      h2 {
+        font-size: 1.3em;
+      }
+
+      body {
+        font-size: 1.1em;
+        padding: 15px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .policy-container {
+        margin: 40px auto;
+        padding: 10px;
+      }
+
+      h1 {
+        font-size: 1.4em;
+        padding-bottom: 8px;
+      }
+
+      h2 {
+        font-size: 1.2em;
+      }
+
+      body {
+        font-size: 1em;
+        padding: 10px;
+        line-height: 1.4;
+      }
+
+      .back-button {
+        font-size: 1.4em;
+        top: 10px;
+        left: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <a href="index.html" class="back-button"> Back to Gaia Grid</a>
+
+  <div class="policy-container">
+    <h1> Gaia Grid Sharing Policy</h1>
+    
+    <h2>You're Welcome To</h2>
+    <ul>
+      <li>Share full texts <strong>non-commercially</strong></li>
+      <li>Create derivatives <code>(must credit)</code></li>
+      <li>Print for personal use</li>
+      <li>Use in classrooms/workshops</li>
+    </ul>
+    
+    <h2>Please Don't</h2>
+    <ul>
+      <li>Sell prints/merch <strong>without permission</strong></li>
+      <li>Train AI models with this work</li>
+      <li>Remove attribution</li>
+      <li>Alter core meanings</li>
+    </ul>
+    
+    <h2>How To Credit</h2>
+    <p>Use this format:</p>
+    <code>"Title" by Harsh Valechha / Gaia Grid (www.thegaiagrid.org)</code>
+    
+    <div class="copyright-notice">
+      © 2025 Harsh Valechha | All non-commercial sharing rights granted
+    </div>
+  </div>
+</body>
+</html>
